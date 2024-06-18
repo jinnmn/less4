@@ -1,12 +1,10 @@
 
 public class TeacherController implements UserController {
 
-    private TeacherView view = new TeacherView();;
-    private TeacherService service = new TeacherService();
-    
+    private TeacherView view;
+        
     public TeacherController() {
         this.view = new TeacherView();
-        this.service = new TeacherService();
     }
 
     @Override
@@ -19,6 +17,6 @@ public class TeacherController implements UserController {
     }
     
    public void editTeacher(int id, String name, String last) {
-        editTeacher(id, name, last);
+        TeacherService.editTeacher(id, name, last);
 }
 }

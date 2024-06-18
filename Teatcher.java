@@ -7,4 +7,9 @@ public class Teatcher extends User  {
         this.name = name;
         this.lastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Teacher [id=%d, name=%s, last=%s]", id, name, lastName);
+    }
 }

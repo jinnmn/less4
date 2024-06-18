@@ -1,8 +1,9 @@
+import java.util.LinkedList;
 import java.util.List;
 
 public class TeacherService {
 
-    private static List<Teatcher> teatchers;
+    private static List<Teatcher> teatchers = new LinkedList<>();
     
     public Teatcher createTeatcher(int id, String name, String last) {
         Teatcher x =  new Teatcher(id, name, last);
